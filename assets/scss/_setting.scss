@@ -1,0 +1,179 @@
+/* Val---------------------------------------------- */
+
+$ff:"Noto Sans JP","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+$base:#000;
+$accent : #e6faff;
+$secondary_base : #36a0d9;
+
+/* Mixin---------------------------------------------- */
+
+$w-s: 480;
+$w-m: 810;
+$w-l: 1000;
+$w-xl: 1280;
+
+
+$breakpoints: (
+  's': 'screen and (max-width:'+ $w-s +'px)',
+  'm': 'screen and (max-width:'+ $w-m +'px)',
+  'l': 'screen and (max-width:'+ $w-l +'px)',
+  'xl': 'screen and (max-width:'+ $w-xl +'px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+// 例
+// @include mq(l) { // 引数を個別に指定
+//     color: red;
+//   }
+
+
+/* Common---------------------------------------------- */
+// common
+body{
+  font-family: $ff;
+  font-size: 14px;
+  // font-feature-settings: "palt";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $base;
+
+  @include mq(xl) {
+      color: $base;
+  }
+  @include mq(l) {
+      color: $base;
+  }
+  @include mq(m) {
+    font-size: to-vw(13,375);
+  }
+  @include mq(s) {
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $base;
+  &:hover{
+    opacity: .8;
+    transition: all .6s ease;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+h1,h2,h3,h4,h5{
+  font-weight: normal;
+}
+input[type="submit"],
+input[type="button"] {
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+    &::-webkit-search-decoration {
+      display: none;
+    }
+    &::focus {
+      outline-offset: -2px;
+    }
+}
+input[type="text"],input[type="email"],select,textarea{
+  padding:.25em .5em;
+  font-size: 15px;
+  width: 100%;
+  @include mq(m){
+    font-size: 16px;
+    // transform: scale(0.9);
+  }
+}
+select{
+  font-family: system-ui;
+}
+textarea{
+  @include mq(m){
+    min-height: 30vw;
+    width: 100%;
+  }
+}
+.is{
+  &-pc{
+    @include mq(m) {
+      display: none;
+    }
+  }
+  &-sp{
+    display: none;
+    @include mq(m) {
+      display: block;
+    }
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+%inner{
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  @include mq(l) {
+    width: 98%;
+  }
+}
+.inner{
+  max-width: 1000px;
+  @extend %inner;
+  &-wide{
+    max-width: 1150px;
+    @extend %inner;
+  }
+  &-narrow{
+    max-width: 820px;
+    @extend %inner;
+  }
+}
+
+///*フォントサイズ/フォントファミリー/レタースパッシング指定*////
+
+@mixin f($size,$ff,$ls){
+  @if $size{
+    font-size: $size + px;
+  }
+  @if $ff{
+    font-family: $ff;
+  }
+  @if $ls{
+    letter-spacing: $ls * 0.001 + em;
+  }
+}
+
+
+/* コンテンツ幅---------------------------------------------- */
+// 
+$b-width: 980px;
+
+
+///*レスポンシブフォントサイズ*////
+
+@function get_vw($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@mixin fz_vw($font_size: 10) {
+  font-size: $font_size * 1px;
+  font-size: get_vw($font_size);
+}
