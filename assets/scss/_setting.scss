@@ -12,10 +12,6 @@ $w-m: 810;
 $w-l: 1000;
 $w-xl: 1280;
 
-h1{
-  color: blue;
-  font-size: 12px;
-}
 
 $breakpoints: (
   's': 'screen and (max-width:'+ $w-s +'px)',
