@@ -1,0 +1,24 @@
+header{
+    .header-inner{
+        display: flex;
+        max-width: $w-xl;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        .header-inner__nav{
+            .header-list__menu{
+                display: flex;
+                .header-list-item{
+                    margin-right: 30px;
+                    .header-list-item__link{
+                        @include f(18,$ff,50);
+                    }
+                }
+                .header-list-item:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -7,10 +7,10 @@ $secondary_base : #36a0d9;
 
 /* Mixin---------------------------------------------- */
 
-$w-s: 480;
-$w-m: 810;
-$w-l: 1000;
-$w-xl: 1280;
+$w-s: 480 + px;
+$w-m: 810 + px;
+$w-l: 1000  + px;
+$w-xl: 1280 + px;
 
 
 $breakpoints: (
@@ -42,6 +42,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $base;
+  background-image: url(../img/ivory_tower_bg.jpeg);
 
   @include mq(xl) {
       color: $base;

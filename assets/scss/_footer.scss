@@ -1,0 +1,14 @@
+footer{
+    .footer_inner{
+        max-width: $w-xl;
+        margin: 0 auto;
+        text-align: center;
+        .footer_logo{
+            margin-bottom: 18px;
+        }
+        .Copyright{
+            @include f(12,$ff,50);
+        }
+
+    }
+}
