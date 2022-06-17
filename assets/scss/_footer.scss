@@ -1,8 +1,10 @@
 footer{
+    background-color: $bg;
     .footer_inner{
         max-width: $w-xl;
         margin: 0 auto;
         text-align: center;
+        padding: 5% 0;
         .footer_logo{
             margin-bottom: 18px;
         }

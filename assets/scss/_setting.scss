@@ -1,7 +1,8 @@
 /* Val---------------------------------------------- */
 
 $ff:"Noto Sans JP","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
-$base:#000;
+$base:#3B4043;
+$bg:#f2ede4;
 $accent : #e6faff;
 $secondary_base : #36a0d9;
 
@@ -177,4 +178,12 @@ $b-width: 980px;
 @mixin fz_vw($font_size: 10) {
   font-size: $font_size * 1px;
   font-size: get_vw($font_size);
+}
+
+/* コンテンツタイトル---------------------------------------------- */
+.section-title{
+  @include f(24,$ff,120);
+  font-weight: bold;
+  margin-bottom: 37px;
+  text-align: center;
 }

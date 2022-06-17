@@ -1,0 +1,87 @@
+.main{
+    #mv{
+        background-color:$bg;
+        .mv__inner{
+            padding: 10% 0;
+            max-width: $w-xl;
+           text-align: center;
+           margin: 0 auto;
+            .mv-img{
+                display: block;
+                margin: 0 auto 20px;
+            }
+        }
+    }
+    #about-this-site{
+        .about-this-site__inner{
+            // section-titleはsetting.scssに記載
+            max-width: $w-xl;
+            padding: 10% 20px;
+            margin: 0 auto;
+            .about-this-site__contents{
+                &_text{
+                    @include f(14,$ff,50);
+                    line-height: 1.75;
+                }
+            }
+        }
+    }
+    #about-me{
+        background-color: $bg;
+        .about-me__inner{
+            padding: 10% 20px;
+            max-width: $w-xl;
+            margin: 0 auto;
+            .about-me-contents{
+                display: flex;
+                &_img{
+                    margin-right: 20px
+                }
+                &_txt{
+                    @include f(14,'',50);
+                }
+            }
+
+        }
+    }
+    #works{
+        .works__inner{
+            padding: 10% 20px;
+            max-width: $w-xl;
+            margin: 0 auto;
+            .works-contents{
+            .works-item{
+                display: flex;
+                margin-bottom: 24px;
+                .works_item__link{
+                    display: flex;
+                &_img{
+                    width: 50%;
+                    margin-right: 20px;
+                }
+                .works-item-txt{
+                    &__title{
+                        @include f(20,'',50);
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+                    &__heading{
+                        @include f(16,'',50);
+                        margin-bottom: 12px;
+                    }
+                    &__list{
+                        &_item{
+                            @include f(14,'',50);
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .works-item:last-of-type{
+            margin-bottom: 0;
+        }
+            }
+        }
+    }
+}
