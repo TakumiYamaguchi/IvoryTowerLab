@@ -41,61 +41,51 @@ Template Name: TOP
             <h2 class="section-title">Works</h2>
             <div class="works-contents">
                 <article class="works-item">
-                    <a class="works_item__link" href="">
+                    <a class="works_item__link" href="http://engress.ivorytowerlab.jp/wp/">
                         <img class="works_item__link_img"
-                            src="<?php echo get_template_directory_uri(); ?>/img/engress_top.jpeg" alt="engrees">
+                            src="<?php echo get_template_directory_uri(); ?>/img/engrees.png" alt="engrees">
                         <div class="works-item-txt">
-                            <h3 class="works-item-txt__title">模写,Wordpressオリジナルテーマ作成</h3>
+                            <h3 class="works-item-txt__title">コーディング教材。<br>コーディング、Wordpressオリジナルテーマ作成</h3>
                             <p class="works-item-txt__heading">[使用技術]</p>
                             <ul class="works-item-txt__list">
                                 <li class="works-item-txt__list_item">wordpress</li>
                                 <li class="works-item-txt__list_item">Sass</li>
                                 <li class="works-item-txt__list_item">gulp</li>
+                                <li class="works-item-txt__list_item">Vue.js</li>
                             </ul>
                         </div>
                     </a>
                 </article>
                 <article class="works-item">
-                    <a class="works_item__link" href="">
+                    <a class="works_item__link" href="http://satousetubi.ivorytowerlab.jp/">
                         <img class="works_item__link_img"
-                            src="<?php echo get_template_directory_uri(); ?>/img/engress_top.jpeg" alt="engrees">
+                            src="<?php echo get_template_directory_uri(); ?>/img/satousetubi.png" alt="engrees">
                         <div class="works-item-txt">
-                            <h3 class="works-item-txt__title">模写,Wordpressオリジナルテーマ作成</h3>
+                            <h3 class="works-item-txt__title">コーディング、模写、Wordpressオリジナルテーマ作成</h3>
                             <p class="works-item-txt__heading">[使用技術]</p>
                             <ul class="works-item-txt__list">
                                 <li class="works-item-txt__list_item">wordpress</li>
                                 <li class="works-item-txt__list_item">Sass</li>
                                 <li class="works-item-txt__list_item">gulp</li>
+                                <li class="works-item-txt__list_item">jQuery</li>
+                                <li class="works-item-txt__list_item">※Basic認証 ID:test PW:test</li>
                             </ul>
                         </div>
                     </a>
                 </article>
                 <article class="works-item">
-                    <a class="works_item__link" href="">
+                    <a class="works_item__link" href="http://amagi.ivorytowerlab.jp/">
                         <img class="works_item__link_img"
-                            src="<?php echo get_template_directory_uri(); ?>/img/engress_top.jpeg" alt="engrees">
+                            src="<?php echo get_template_directory_uri(); ?>/img/amagi.png" alt="engrees">
                         <div class="works-item-txt">
-                            <h3 class="works-item-txt__title">模写,Wordpressオリジナルテーマ作成</h3>
+                            <h3 class="works-item-txt__title">コーディング、模写、Wordpressオリジナルテーマ作成</h3>
                             <p class="works-item-txt__heading">[使用技術]</p>
                             <ul class="works-item-txt__list">
                                 <li class="works-item-txt__list_item">wordpress</li>
                                 <li class="works-item-txt__list_item">Sass</li>
                                 <li class="works-item-txt__list_item">gulp</li>
-                            </ul>
-                        </div>
-                    </a>
-                </article>
-                <article class="works-item">
-                    <a class="works_item__link" href="">
-                        <img class="works_item__link_img"
-                            src="<?php echo get_template_directory_uri(); ?>/img/engress_top.jpeg" alt="engrees">
-                        <div class="works-item-txt">
-                            <h3 class="works-item-txt__title">模写,Wordpressオリジナルテーマ作成</h3>
-                            <p class="works-item-txt__heading">[使用技術]</p>
-                            <ul class="works-item-txt__list">
-                                <li class="works-item-txt__list_item">wordpress</li>
-                                <li class="works-item-txt__list_item">Sass</li>
-                                <li class="works-item-txt__list_item">gulp</li>
+                                <li class="works-item-txt__list_item">jQuery</li>
+                                <li class="works-item-txt__list_item">※Basic認証 ID:test PW:test</li>
                             </ul>
                         </div>
                     </a>

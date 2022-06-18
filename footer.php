@@ -12,9 +12,11 @@
 ?>
 
 <footer>
-    <div class="footer_inner">
-        <img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/img/ivory_tower_lab_logo.png" alt="">
-        <p class="Copyright">© 2020 Takumi Yamaguchi</p>
+    <div class="footer__inner">
+        <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/ivory_tower_lab_logo.png" alt="">
+    </div>
+    <div class="footer_bottom">
+        <p class="copyright">© 2020 Takumi Yamaguchi</p>
     </div>
 </footer><!-- #colophon -->
 <?php wp_footer(); ?>

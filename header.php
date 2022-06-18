@@ -34,16 +34,13 @@
             <nav class="header-inner__nav">
                 <ul class="header-list__menu">
                     <li class="header-list-item">
-                        <a class="header-list-item__link" href="">About This Site</a>
+                        <a class="header-list-item__link" href="#about-this-site">About This Site</a>
                     </li>
                     <li class="header-list-item">
-                        <a class="header-list-item__link" href="">Portfolio</a>
+                        <a class="header-list-item__link" href="#about-me">About Me</a>
                     </li>
                     <li class="header-list-item">
-                        <a class="header-list-item__link" href="">My Skill</a>
-                    </li>
-                    <li class="header-list-item">
-                        <a class="header-list-item__link" href="">Contact</a>
+                        <a class="header-list-item__link" href="#works">Works</a>
                     </li>
             </nav>
         </div>
