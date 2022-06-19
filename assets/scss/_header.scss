@@ -1,24 +1,102 @@
-header{
-    .header-inner{
+header {
+    .header-inner {
         display: flex;
         max-width: $w-xl;
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        .header-inner__nav{
-            .header-list__menu{
-                display: flex;
-                .header-list-item{
-                    margin-right: 30px;
-                    .header-list-item__link{
-                        @include f(18,$ff,50);
+        &__title {
+            .header-logo__link {
+                .header-logo {
+                    @media screen and(max-width: $w-s) {
+                        max-width: 70%;
                     }
                 }
-                .header-list-item:last-of-type{
+            }
+        }
+        .header-inner__nav {
+            @media screen and(max-width: 768px) {
+                display: none;
+            }
+            .header-list__menu {
+                display: flex;
+                .header-list-item {
+                    margin-right: 30px;
+                    &__link {
+                        @include f(18, $ff, 50);
+                    }
+                }
+                .header-list-item:last-of-type {
                     margin-right: 0;
                 }
             }
         }
+
+        /*-----* ハンバーガーメニュー本体*-----*/
+        /*-----* メニュー開閉ボタン*-----*/
+        .sp-menu__btn {
+            position: fixed;
+            // top: 20px;
+            right: 20px;
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            color: #fff;
+            @media screen and (min-width: 769px) {
+                display: none;
+            }
+        }
+
+            .sp-menu {
+                @media screen and (min-width: 769px) {
+                    display: none;
+                }
+                /*----- * メニュー本体 *-----*/
+                .sp-menu__list {
+                    @media screen and (min-width: 769px) {
+                        display: none;
+                    }
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: #555;
+
+                    .sp-menu__item {
+                        width: 100%;
+                        height: auto;
+                        padding: 0.5em 1em;
+                        text-align: center;
+                        color: #fff;
+                        box-sizing: border-box;
+                        .sp-menu__item-link {
+                            @include f(12, "", 50);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            /*-----* アニメーション部分*-----*/
+            /* アニメーション前のメニューの状態 */
+            .sp-menu__list {
+                transform: translateX(100vw);
+                transition: all 0.3s linear;
+            }
+            /*-----*アニメーション後のメニューの状態*-----*/
+            .sp-menu__list.is-active {
+                transform: translateX(0);
+            }
     }
 }

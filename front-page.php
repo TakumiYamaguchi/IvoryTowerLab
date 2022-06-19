@@ -17,7 +17,7 @@ Template Name: TOP
         <div class="about-this-site__inner">
             <h2 class="section-title">About This Site</h2>
             <div class="about-this-site__contents">
-                <p class="about-this-site__inner_text">Ivory Tower Laboratoryはwebエンジニア兼サウンドデザイナー山口拓己のポートフォリオサイトです。
+                <p class="about-this-site__text">Ivory Tower Laboratoryはwebエンジニア兼サウンドデザイナー山口拓己のポートフォリオサイトです。
                     一人黙々と作業をすることの多いwebエンジニア、サウンドデザインというワークスタイルに、かつ日々新たな技術やアイデアを追い求めたいたい。そういう想いから
                     「Ivory Tower Laboratory」という名前を名付けました。</p>
             </div>

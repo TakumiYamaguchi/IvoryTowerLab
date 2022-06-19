@@ -9,7 +9,7 @@ $secondary_base : #36a0d9;
 /* Mixin---------------------------------------------- */
 
 $w-s: 480 + px;
-$w-m: 810 + px;
+$w-m: 768 + px;
 $w-l: 1000  + px;
 $w-xl: 1280 + px;
 
@@ -163,10 +163,6 @@ textarea{
 }
 
 
-/* コンテンツ幅---------------------------------------------- */
-// 
-$b-width: 980px;
-
 
 ///*レスポンシブフォントサイズ*////
 
@@ -186,4 +182,7 @@ $b-width: 980px;
   font-weight: bold;
   margin-bottom: 37px;
   text-align: center;
+  @media screen and(max-width: $w-s){
+    margin-bottom: 7vw;
+  }
 }

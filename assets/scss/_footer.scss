@@ -4,7 +4,7 @@ footer {
         max-width: $w-xl;
         margin: 0 auto;
         text-align: center;
-        padding: 5% 0;
+        padding: 20px;
         .footer-logo {
             margin-bottom: 18px;
         }
@@ -14,7 +14,7 @@ footer {
         .copyright {
             @include f(12, $ff, 50);
             color: #fff;
-            padding: 5px 0;
+            padding: 20px;
             text-align: center;
         }
     }
