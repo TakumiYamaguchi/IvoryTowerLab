@@ -124,7 +124,8 @@ Template Name: TOP
                         </tr>
                         <tr class="input-item">
                             <th class="input-item__inner">
-                                <p class="input-item__inner_title">担当者名（カタカナ）</p>
+                                <p class="input-item__inner_title">担当者名(カタカナ)
+                                </p>
                                 <span class="input-item__inner_req">必須</span>
                             </th>
                             <td class="input-info">
@@ -154,13 +155,14 @@ Template Name: TOP
                                 <span class="input-item__inner_req">必須</span>
                             </th>
                             <td class="input-info">
-                                <textarea cols="30" rows="5" name="msg" class="input-info__txt"></textarea>
+                                <textarea cols="30" rows="5" name="msg"
+                                    class="input-info__txt input-info__textarea"></textarea>
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="submit">
-                    <button type="submit" value="確認する" class="submit__button">
+                    <button type="submit__button" value="確認する" class="submit__button">
                         <span>確認する</span>
                     </button>
                 </div>

@@ -45,6 +45,9 @@
                     <li class="header-list-item">
                         <a class="header-list-item__link" href="#works">Works</a>
                     </li>
+                    <li class="header-list-item">
+                        <a class="header-list-item__link" href="#contact">Contact</a>
+                    </li>
             </nav>
             <button type="button" class="sp-menu__btn">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -59,6 +62,9 @@
                     </li>
                     <li class="sp-menu__item">
                         <a class="sp-menu__item-link" href="#works">Works</a>
+                    </li>
+                    <li class="sp-menu__item">
+                        <a class="sp-menu__item-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
