@@ -88,37 +88,37 @@ input[type="button"] {
       outline-offset: -2px;
     }
 }
-input[type="text"],input[type="email"],select,textarea{
-  padding:.25em .5em;
-  font-size: 15px;
-  width: 100%;
-  @include mq(m){
-    font-size: 16px;
-    // transform: scale(0.9);
-  }
-}
+// input[type="text"],input[type="email"],select,textarea{
+//   padding:.25em .5em;
+//   font-size: 15px;
+//   width: 100%;
+//   @include mq(m){
+//     font-size: 16px;
+//     // transform: scale(0.9);
+//   }
+// }
 select{
   font-family: system-ui;
 }
-textarea{
-  @include mq(m){
-    min-height: 30vw;
-    width: 100%;
-  }
-}
-.is{
-  &-pc{
-    @include mq(m) {
-      display: none;
-    }
-  }
-  &-sp{
-    display: none;
-    @include mq(m) {
-      display: block;
-    }
-  }
-}
+// textarea{
+//   @include mq(m){
+//     min-height: 30vw;
+//     width: 100%;
+//   }
+// }
+// .is{
+//   &-pc{
+//     @include mq(m) {
+//       display: none;
+//     }
+//   }
+//   &-sp{
+//     display: none;
+//     @include mq(m) {
+//       display: block;
+//     }
+//   }
+// }
 
 
 *,
