@@ -98,75 +98,11 @@ Template Name: TOP
             <h2 class="section-title">contact</h2>
             <ul class="contact-head">
                 <li class="contact-head__item"><span class="contact-head__item_current">入力</span></li>
-                <li class="contact-head__item"><span>確認</span></li>
-                <li class="contact-head__item"><span>送信</span></li>
+                <li id="confirmation" class="contact-head__item"><span>確認</span>
+                </li>
+                <li id="sendーcompletely" class="contact-head__item"><span>送信</span></li>
             </ul>
-            <form action="">
-                <table class="contact-body">
-                    <tbody>
-                        <tr class="input-item">
-                            <th class="input-item__inner">
-                                <p class="input-item__inner_title">会社名</p>
-                                <span class="input-item__inner_req">必須</span>
-                            </th>
-                            <td class="input-info">
-                                <input class="input-info__txt" type="text" name="company-name" placeholder="例）株式会社ABC">
-                            </td>
-                        </tr>
-                        <tr class="input-item">
-                            <th class="input-item__inner">
-                                <p class="input-item__inner_title">担当者名（漢字）</p>
-                                <span class="input-item__inner_req">必須</span>
-                            </th>
-                            <td class="input-info">
-                                <input class="input-info__txt" name="pic" type="text" placeholder="例）山田太郎">
-                            </td>
-                        </tr>
-                        <tr class="input-item">
-                            <th class="input-item__inner">
-                                <p class="input-item__inner_title">担当者名(カタカナ)
-                                </p>
-                                <span class="input-item__inner_req">必須</span>
-                            </th>
-                            <td class="input-info">
-                                <input class="input-info__txt" type="text" name="pic-kana" placeholder="例）ヤマダタロウ">
-                            </td>
-                        </tr>
-                        <tr class="input-item">
-                            <th class="input-item__inner">
-                                <p class="input-item__inner_title">メールアドレス</p>
-                                <span class="input-item__inner_req">必須</span>
-                            </th>
-                            <td class="input-info">
-                                <input class="input-info__txt" name="email" type=" text" placeholder="例）abc@sample.com">
-                            </td>
-                        </tr>
-                        <tr class="input-item">
-                            <th class="input-item__inner">
-                                <p class="input-item__inner_title">電話番号</p>
-                            </th>
-                            <td class="input-info">
-                                <input class="input-info__txt" name="tel" type="text" placeholder="例）012-345-678">
-                            </td>
-                        </tr>
-                        <tr class="input-item">
-                            <th class="input-item__inner">
-                                <p class="input-item__inner_title">お問い合わせ内容</p>
-                                <span class="input-item__inner_req">必須</span>
-                            </th>
-                            <td class="input-info">
-                                <textarea cols="30" rows="5" name="msg"
-                                    class="input-info__txt input-info__textarea"></textarea>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="submit">
-                    <button type="submit__button" value="確認する" class="submit__button">
-                        <span>確認する</span>
-                    </button>
-                </div>
-            </form>
+            <?php echo do_shortcode('[mwform_formkey key="459"]'); ?>
         </div>
     </section>
 </main>

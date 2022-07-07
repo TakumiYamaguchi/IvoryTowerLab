@@ -9,14 +9,20 @@ header {
         &__title {
             .header-logo__link {
                 .header-logo {
-                    @media screen and(max-width: $w-s) {
+                    @media screen and(max-width: 900px) {
                         max-width: 70%;
+                        @media screen and(max-width: $w-m) {
+                            max-width: 100%;
+                            @media screen and(max-width: 425px){
+                                max-width: 70%;
+                            }
+                        }
                     }
                 }
             }
         }
         .header-inner__nav {
-            @media screen and(max-width: 768px) {
+            @media screen and(max-width: 803px) {
                 display: none;
             }
             .header-list__menu {
@@ -47,18 +53,18 @@ header {
             align-items: center;
             background: #333;
             color: #fff;
-            @media screen and (min-width: 769px) {
+            @media screen and (min-width: 804px) {
                 display: none;
             }
         }
 
             .sp-menu {
-                @media screen and (min-width: 769px) {
+                @media screen and (min-width: 804px) {
                     display: none;
                 }
                 /*----- * メニュー本体 *-----*/
                 .sp-menu__list {
-                    @media screen and (min-width: 769px) {
+                    @media screen and (min-width: 804px) {
                         display: none;
                     }
                     position: fixed;

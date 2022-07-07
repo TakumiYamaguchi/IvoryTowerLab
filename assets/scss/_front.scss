@@ -80,7 +80,7 @@
                     margin-bottom: 45px;
                     .works_item__link {
                         display: flex;
-                        @media screen and(max-width: 768px) {
+                        @media screen and(max-width: $w-m) {
                             display: block;
                         }
                         &_img {
@@ -137,14 +137,15 @@
             .contact-head {
                 display: flex;
                 justify-content: space-between;
-                margin: 0 13px 20px;
+                // margin: 0 13px 20px;
+                margin: 0 auto 40px;
                 max-width: $w-m;
                 &__item {
                     @include f(16, "", 50);
                     font-weight: bold;
                     margin-left: 20px;
                     &_current {
-                        color: #005aa4;
+                        color: $accent;
                         position: relative;
                         padding-bottom: 8px;
                     }
@@ -156,7 +157,7 @@
                         bottom: 0;
                         width: 100%;
                         height: 1px;
-                        background: #005aa4;
+                        background: $accent;
                     }
                 }
             }
@@ -168,9 +169,9 @@
                     padding: 45px 50px;
                     tbody {
                         .input-item {
-                            border-bottom: 1px solid #cad9e5;
-                            background: #e4eef7;
-                            color: #005aa4;
+                            border-bottom: 1px solid #e8e4de;
+                            background: #e5dccc;
+                            color: #e8e4de;
                             &__inner {
                                 padding: 46px 30px;
                                 display: flex;
@@ -186,6 +187,7 @@
                                 }
                                 &_title {
                                     margin-right: 12px;
+                                    color: $base;
                                     @media screen and(max-width: 1024px){
                                         margin-right: 0;
                                         margin-bottom: 12px;
@@ -208,20 +210,39 @@
                                 max-width: 900px;
                                 text-align: left;
                                 vertical-align: top;
+                                width: 80%;
                                 @media screen and(max-width: $w-m){
                                     display: block;
                                     padding: 2vw;
+                                    width: 100%;
                                 }
                                 &__txt {
-                                    width: 80%;
+                                    width: 100%;
                                     padding: 0.25em 0.5em;
                                     font-size: 15px;
                                     @media screen and(max-width: $w-m) {
                                         width: 100%;
                                     }
                                 }
+                                .tell__input{
+                                    width: 20%;
+                                    margin: 0 10px;
+                                    @media screen and(max-width: $w-s) {
+                                        width: 100%;
+                                    }
+                                }
+                                .tell__input:first-of-type{
+                                    margin-left: 0;
+                                }
+                                .tell__input:last-of-type{
+                                    margin-right: 0;
+                                }
                                 &__textarea {
                                     width: 100%;
+                                }
+                                .mwform-tel-field{
+                                    display: flex;
+                                    align-items: center;
                                 }
                             }
                         }
@@ -239,6 +260,8 @@
                         height: 62px;
                         margin: 0 0 60px;
                         position: relative;
+                        color: #fff;
+                        background-color: $accent;
                     }
                     .submit__button::after{
                         position: absolute;
@@ -249,8 +272,8 @@
                         bottom: 0;
                         width: 10px;
                         height: 10px;
-                        border-top: 2px solid #005AA4;
-                        border-right: 2px solid #005AA4;
+                        border-top: 2px solid $accent;
+                        border-right: 2px solid $accent;
                         -webkit-transform: rotate(45deg);
                         transform: rotate(45deg);
                         margin: auto;
